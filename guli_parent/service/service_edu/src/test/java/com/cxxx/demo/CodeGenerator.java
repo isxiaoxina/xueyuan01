@@ -123,7 +123,7 @@ public class CodeGenerator {
                 }
             }
             for (int i1 : a) {
-                System.out.println(i1);
+                System.out.println(i1);//输出
             }
         }
 
