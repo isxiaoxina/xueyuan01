@@ -122,44 +122,19 @@ public class CodeGenerator {
                     a[j+1]=m;
                 }
             }
-        }
-
-
-
-    }
-
-
-
-    @Test
-    public  void test(){
-         int[] a={1,3,34,5,76,2};
-      xuanze(a);
-    }
-
-
-    public  void xuanze(int a[]){
-        int min;
-        for (int i=0;i<a.length-1;i++){   //交换的次数比总长度要少1
-            min=i;
-            for (int j=i+1;j<a.length;j++){
-                if(a[j]<a[min]){  //找到当前   a【1】<a[0]  循环比较  从a1 ，a2，a3   开始和a0比  所以要加一
-                    min=j;   //把j的下标赋值给最小
-                   //等于找到了下标
-                }
-            }
-            if (min!=i){
-                int cun;
-                cun=a[i];//先把ai的值取出来
-                a[i]=a[min];
-                a[min]=cun;
+            for (int i1 : a) {
+                System.out.println(i1);
             }
         }
-        for (int i1:a
-             ) {
-            System.out.println(i1);
 
-        }
 
 
     }
+
+
+
+
+
+
+
 }
